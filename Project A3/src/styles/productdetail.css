@@ -1,0 +1,44 @@
+.cart-popup {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 20px;
+  transition: 0.4s ease-in-out;
+  z-index: 1050;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+  overflow-y: auto;
+}
+
+.cart-popup.active {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #f06292;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.btn-pink {
+  background-color: #f06292;
+  color: white;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #d81b60;
+  color: white;
+}
+
+.text-pink {
+  color: #f06292;
+}

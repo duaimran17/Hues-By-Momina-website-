@@ -1,0 +1,98 @@
+nav.navbar {
+  background-color: rgba(26, 26, 26, 0.95);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+  color: #f06292 !important;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 5px;
+}
+
+.nav-link {
+  color: white !important;
+  padding: 0 10px !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-item-underline {
+    font-weight: 500;
+    padding-bottom: 3px !important;
+}
+.nav-item-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f06292;
+    transition: width 0.3s ease;
+}
+
+.nav-item-underline:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+  background-color: transparent !important;
+  color: #f06292 !important;
+  transform: none;
+}
+
+.social-links-nav {
+    display: flex;
+    gap: 15px;
+}
+.social-links-nav a {
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+.social-links-nav a:hover {
+    color: #f06292;
+}
+
+.nav-icon-item {
+    margin-left: 15px;
+    position: relative;
+}
+.nav-icon {
+    font-size: 1.2rem;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #f06292;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    padding: 1px 5px;
+    line-height: 1;
+}

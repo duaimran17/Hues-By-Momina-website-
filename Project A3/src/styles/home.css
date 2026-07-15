@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/images/background.jpeg'); 
+  background-color: #0f0f0f;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  text-align: center; 
+  padding-top: 80px; 
+  min-height: 100vh; 
+  display: flex;         
+  flex-direction: column; 
+}
+
+.main-content-wrapper {
+  flex-grow: 1; 
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem; 
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #f06292;
+  margin: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero p {
+  font-size: 1.3rem; 
+  margin-top: 10px;
+  color: #f3e5f5;
+  animation: fadeInUp 1.3s ease forwards;
+}
+
+.about {
+  padding: 60px 20px;
+  background-color: rgba(24, 24, 24, 0.85); 
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #f06292;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto; 
+  color: #e8e8e8;
+}
+
+.featured {
+  background-color: rgba(17, 17, 17, 0.85);
+  padding: 80px 20px;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  color: #f06292;
+  margin-bottom: 40px;
+}
+
+.product-gallery {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  background-color: #1f1f1f; 
+  border-radius: 12px;
+  padding: 15px;
+  width: 320px; 
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  cursor: pointer;
+  text-decoration: none; /* Important for Links */
+  color: white;
+  display: block;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  height: 250px; 
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(240, 98, 146, 0.4); 
+}
+
+.product-info p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #f3e5f5;
+}
+
+.view-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #f06292;
+  font-weight: bold;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+    max-width: 350px;
+  }
+}
